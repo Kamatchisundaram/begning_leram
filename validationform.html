@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <style></style>
+    <title>BIODATA PROJECT</title>
+  </head>
+ <body>
+   <script>
+     function validate(validationform)
+     {
+       var nameValue=document.getElementById("name").value;
+       var dob=document.getElementById("dob").value;
+       if(nameValue === ''||dob ==='')
+       {
+         alert("SORRY... YOU ARE NOT ELIGIBLE ");
+       }
+       else
+       {
+         alert("GOOD... YOU ARE UNDER OUR WAITING LIST");
+         validationform.form.reset();
+       }
+
+       }
+
+   </script>
+   <form>
+    <div style="background-image: url(Kamatchi01.jpeg);background-size: cover">
+   NAME
+   <input type="text" id="name"size="30">
+   <br><br>
+
+   DOB
+   <input type="date" id="dob">
+   <br><br>
+
+   IMAGE<br>
+   <input type="file">
+   <br><br>
+
+   FATHER NAME
+   <input type="text">
+   <br><br>
+
+   PHONE
+   <input type="number" name="Phone" maxlength="10">
+   <br><br>
+
+   GENDER
+   <input type="radio" name="gender" value="M" >Male
+   <input type="radio" name="gender" value="F">Female
+   <input type="radio" name="other" value="O">Other
+   <br><br>
+
+   LANGUAGES KNOWN
+<input type="checkbox">Telugu
+   <input type="checkbox">English
+   <input type="checkbox">Hindi
+   <input type="checkbox">Tamil
+   <br><br>
+
+   EDUCATION
+   <Select>
+     <option selected>Select</option>
+    <option>Under Graduation</option>
+    <option>Post Graduation</option>
+   </Select>
+   <br><br>
+
+   COURSE
+   <Select>
+     <option selected>Select</option>
+     <option>Engineering</option>
+     <option>Medical</option>
+     <option>Arts</option>
+     <option>Other</option>
+   </Select>
+   <br><br>
+
+    COMPUTER SKILLS
+    <input type="checkbox">C
+    <input type="checkbox">C++
+    <input type="checkbox">JAVA
+    <input type="checkbox">Python
+<br><br>
+
+   ADDRESS(Current)<br>
+   <textarea rows="5" cols="20"></textarea>
+   <br/><br/>
+
+   NATIONALITY
+   <Select>
+    <option>Indian</option>
+    <option selected>Select</option>
+    <option>Other</option>
+   </Select>
+<br><br>
+
+   EXTRA CURRICULAR ACTIVITIES<br>
+   <textarea> </textarea>
+   <br/><br/>
+
+   YEARS EXPERIENCED
+   <Select>
+     <option selected>Select</option>
+     <option>None</option>
+    <option>Less than 3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>More than 5</option>
+   </Select>
+   <br><br>
+
+   SALARY EXPECTED
+   <input type="num" name="Salary" maxlength="06">
+   <br><br>
+
+   <input type="reset" value="Reset">
+   <input type="button" onclick="validate(this)" value="Submit"/>
+    </div>
+   </form>
+ </body>
+</html>
