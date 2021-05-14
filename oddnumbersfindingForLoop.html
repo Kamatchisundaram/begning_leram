@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style media="screen">
+     .hide{
+       display:none;
+     }
+  </style>
+  <script>
+
+    function getOddNumbers(){
+      var fromvalue = document.getElementById("text1").value;
+      var givenvalue = document.getElementById("text2").value;
+      fromvalue=parseInt(fromvalue);
+      givenvalue=parseInt(givenvalue);
+
+      for(let i=fromvalue; i<givenvalue; i++)
+      {
+        if(i%2 !==0){
+          document.getElementById('result').innerHTML += i+"<br>";
+          // only odd number reason: if check potrukom
+        }
+        // all numbers
+      }
+      document.getElementById('result').classList.remove('hide');
+  }
+  </script>
+  </head>
+<body>
+  <h1>FOR LOOP TESTING</h1>
+  <input id="text1" type="number">
+  <input id="text2" type="number">
+  <button type="button" name="button" onclick='getOddNumbers()'>click me..</button>
+
+  <div id="result" class="hide">
+    result
+    <br>
+  </div>
+
+  </body>
+  </html>
