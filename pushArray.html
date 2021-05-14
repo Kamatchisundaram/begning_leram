@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var array = [];
+        function gks(){
+          var done = document.getElementById("num1").value;
+          array.push(done);
+          var arraylength = array.length;
+          document.getElementById("result").innerHTML='';
+          //intha edathula value null aana namakkku repeat aagathu or else aagum
+          for(let i=0;i<arraylength;i++){
+            document.getElementById("result").innerHTML+=`${array[i]}<br>`;
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <h3>Pushing values into array</h3>
+      <input type="text" placeholder="Enter a number" id="num1">
+    <button type="button" name="button" onclick="gks()">click me</button>
+    <div id="result"></div>
+  </body>
+</html>
