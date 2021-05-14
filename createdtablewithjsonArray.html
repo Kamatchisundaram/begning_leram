@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>JSON ARRAY</title>
+    <style>
+       table, td,th{
+        border:1px groove blue;
+        border-collapse: collapse;
+      }
+      th{
+        height:50px;
+        width:70px;
+      }
+      td{
+        height:30px;
+        width:70px;
+      }
+      </style>
+  </head>
+  <body>
+    <table id="table">
+      <tr>
+         <th>Name</th>
+         <th>Gender</th>
+         <th>Native</th>
+      </tr>
+      </table>
+    <script>
+      var array=[{id:1,name:"Kamatchi",gender:"male",native:"Pollachi"},
+                 {id:2,name:"Gks",gender:"male",native:"Kunchipalayam"},
+                 {id:3,name:"Nivetha",gender:"female",native:"Pollachi"},
+                 {id:4,name:"xxxx",gender:"female",native:"Trichy"},
+                 {id:5,name:"yyyy",gender:"male",native:"Salem"}]
+              for (x=0;x<array.length;x++){
+                 var h= array[x]
+              document.getElementById("table").innerHTML+="<tr><td>"+h.name+"</td><td>"+h.gender+"</td><td>"+h.native+"</td></tr>";
+                 }
+
+    </script>
+  </body>
+</html>
