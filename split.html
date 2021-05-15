@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spliting</title>
+    <script>
+      var uvalue = "0";
+      function getres(){
+        var givnval = document.getElementById("ind").value;
+        uvalue = uvalue+"-"+givnval;
+        var union = uvalue.split("-");
+        document.getElementById("result").innerHTML='';
+        for(i=1;i<union.length;i++){
+          document.getElementById("result").innerHTML+=union[i];
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="ind">
+    <button type="button" name="button" onclick="getres()">Click Me</button>
+    <div id="result">
+    </div>
+  </body>
+</html>
