@@ -20,7 +20,7 @@ oddnumbersfindingForLoop.html -> Finding the odd numbers between the values give
 
 pushArray.html -> Showing the values given by user consecutively using for loop.
 
-split.html
+split.html -> Using split and global array to display consecutive values.
 
 subtraction.html -> Subtracting the given values by user by declaring function and calling by button.
 
